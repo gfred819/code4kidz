@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(13, 207, 201, 0.572), rgb(222, 148, 10));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    background: yellow;
+    padding: 30px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-style: italic;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.05em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: darkviolet;
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.95em;
+    color: #333;
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
